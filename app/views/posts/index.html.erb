@@ -1,0 +1,18 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+
+
+<br>
+<h1>Hi, my name is <%= @name %></h1>
+
+<ol>
+  <% @posts.each do |post| %>
+    <li>
+      <h3><%= post.title %></h3>
+      <p><%= post.body %></p>
+    </li>
+
+  <% end %>
+
+</ol>
